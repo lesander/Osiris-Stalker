@@ -3,3 +3,4 @@ sqlalchemy
 requests
 beautifulsoup4
 slackweb
+lxml
