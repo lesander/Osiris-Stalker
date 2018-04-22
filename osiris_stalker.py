@@ -112,7 +112,7 @@ class Osiris:
 
                 p = s.post(self.URL_AUTH, headers=self.headers, data=self.payload, verify=True)
 
-                r = s.get(self.URL)
+                r = s.get(self.URL, headers=self.headers, verify=True)
                 data = r.text
 
                 soup = BeautifulSoup(data, 'lxml')
